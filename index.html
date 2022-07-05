@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./homestyle.css" />
+    <link href="http://fonts.cdnfonts.com/css/superbly" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu POKEVILLE</title>
+    <script src="./homeScript.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="./img/pokeville_logo.png" alt="logo">
+    </div>
+    
+    <div class="menu">
+        <div class="menu-content">
+            <h1 class="menu-title">Menu</h1>
+
+            <div>
+                <a onmouseover="showIcon(jogar)" onmouseout="closeIcon(jogar)" href="jornada.html"  class="menu-button">
+                    <img class="icon" id="jogar" src="./img/icone_hover.png">
+                    JOGAR
+                </a>
+            </div>
+
+            <div>
+                <a onmouseover="showIcon(pokedex)" onmouseout="closeIcon(pokedex)" href="pokedex.html"   class="menu-button">
+                    <img  class="icon" id="pokedex" src="./img/icone_hover.png">
+                    Pokedéx
+                </a>
+            </div>
+            
+
+            <div>
+                <a onmouseover="showIcon(config)" onmouseout="closeIcon(config)"  href="" class="menu-button">
+                    <img class="icon" id="config" src="./img/icone_hover.png">
+                    Config
+                </a>
+            </div>
+
+            <div>
+                <a onmouseover="showIcon(link)" onmouseout="closeIcon(link)"  class="menu-button" onclick="showModal2()">
+                    <img class="icon" id="link" src="./img/icone_hover.png">
+                    Links úteis
+                </a>
+            </div>
+
+            <div>
+                <a onmouseover="showIcon(creditos)" onmouseout="closeIcon(creditos)"  class="menu-button" onclick="showModal()">
+                    <img class="icon" id="creditos" src="./img/icone_hover.png">
+                    Créditos
+                </a>
+            </div>
+
+            <div>
+                <a   class="menu-button" >
+            </div>
+            <div>
+                <a class="menu-button" >
+                </a>
+            </div>
+            
+                    
+                    
+                    
+                    
+
+
+            
+            
+            
+            
+        </div>
+    </div>
+    
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">
+                X
+            </span>
+            <h1 class="modal-title">Créditos</h1>
+            <p class="modal-title">Esse site foi feite para aprendizado por </p>
+            <p class="modal-title"> mim Kadu, estudante de Engenharia de </p>
+            <p class="modal-title"> Software na Univille-SC.</p>
+            <p class="modal-title"><b>Cenário:</b> Kadu França</p>
+            <p class="modal-title"><b>Back-end(Js):</b> Kadu França</p>
+            <p class="modal-title"><b>Front-end(CSS):</b> Kadu França</p>
+            <p class="modal-title"><b>Ideia do nome:</b> Matheus Zeferino (minha </p>
+            <p  class="modal-title"> ideia era Unimon)</p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2">
+        <div class="modal-content2">
+            <span class="close-button" onclick="closeModal2()">
+                X
+            </span>
+            <h1 class="modal-title">Links úteis</h1>
+            <p class="modal-title"><b>API utilizada:</b> <a href="https://pokeapi.co">pokeapi.co</a></p>
+            <p class="modal-title"><b>Github do Projeto:</b> <a href="https://github.com/kaduFranca">Github.com/kaduFranca</a></p>
+            <p class="modal-title"><b>Fonte usada:</b> <a href="https://fonts.cdnfonts.com/css/superbly">"superbly"</a></p>
+            <p class="modal-title"><b>Meu Linkedin:</b> <a href="https://www.linkedin.com/in/kadu-gabriel-03151522a/">Kadu França Linkedin</a></p>
+            
+        </div>
+    </div>
+  
+  <footer>
+    <p>@ Kadu Gabriel Marques de França - Univille 2022</p>
+  </footer>
+</body>
+</html>

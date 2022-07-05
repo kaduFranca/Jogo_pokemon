@@ -1,0 +1,274 @@
+* {
+  font-family: 'superbly_10_01', sans-serif;
+}
+
+body {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url(../img/pokeville_menu.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-color: #693f57;
+}
+
+
+.npc {
+    display: flex;
+    flex-direction:row-reverse;
+    margin-top: 23%;
+    margin-right: 31%;
+}
+
+.npc img {
+    width: 13%;
+    height: 13%;
+    transform: scale(1.6);
+}
+
+a{
+  text-decoration: none;
+}
+
+.dialog {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.1);
+    transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out,
+      transform 0.25s ease-out;
+  }
+  
+  .close-dialog {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .dialog-short {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out,
+      transform 0.25s ease-out;
+  } 
+
+  .dialog-content {
+    background-image: url(../img/tela3.PNG);
+    background-repeat: no-repeat;
+    position: absolute;
+    padding-top: 5px;
+    width: 390px;
+    height: 100%;
+    margin-left: 40%;
+    margin-top: 13%;
+  }
+  .dialog-content-short {
+    background-image: url(../img/tela4.PNG);
+    background-repeat: no-repeat;
+
+    width: 24%;
+    height: 40%;
+    margin-bottom: 20%;
+    margin-left: 1%;
+    margin-top: 20%;
+    
+  }
+
+  .dialog-title{
+    
+    padding-left: 20px;
+    padding-right: 13px;
+  }
+  
+  .show-dialog {
+    opacity: 1;
+    visibility: visible;
+  }
+  .close-pokemon {
+    visibility: collapse;
+  }
+  
+  .dialog-input {
+    margin-left: 100px;
+    margin-bottom: 16px;
+    margin-top: 0px;
+    padding-top: 0px;
+    transform: scale(1.3);
+  }
+
+  .dialog-input-title {
+    display: flex;
+    margin-left: 125px;
+    margin-top: 70px;
+  }
+  .icon {
+    position: absolute;
+    top: 363px;
+    left: 120px;
+    visibility: hidden;
+  }
+
+  .icon-short {
+    position: absolute;
+    top: 450px;
+    left: 858px;
+    visibility: hidden;
+  }
+
+  .show-icon {
+    visibility: visible;
+  }
+
+  .menu-button {
+    position: relative;
+    padding-top: 15px;
+    padding-left: 145px;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+    background-color: transparent;
+    border: none;
+  }
+
+  .menu-button-short {
+    position: relative;
+    top: 50px;
+    padding-left: 145px;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+    background-color: transparent;
+    border: none;
+  }
+
+  .erro {
+    color: red;
+    margin-left: 30px;
+  }
+
+  /* --------------------------CARD INICIAIS-------------------------------------- */
+
+  
+  .container {
+    height: 0px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    transition: visibility 1s ease-in-out, opacity 0.25s ease-in-out,
+      transform 0.25s ease-out;
+  }
+
+  
+  li {
+      list-style-type: none;
+  }
+  
+  .pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+    cursor: pointer;
+    padding-left: 300px;
+    padding-right:300px ;
+  }
+
+  .pokedex-short {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    cursor: default;
+    padding-inline-start: 0;
+    padding-left: 720px;
+    padding-right:720px;
+  }
+  
+  .card {
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+  }
+
+
+  
+  .card::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 45%;
+    border-radius: 100%;
+    background-color: #222;
+    opacity: .7;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+  }
+    
+  .fire {
+    background-color: #3d2828;
+  }
+  
+  .grass {
+    background-color: #0f2813;
+  }
+  
+  .water, .ice {
+    background-color: #182931;
+  }
+  
+  .card:hover {
+    animation: Scale 0.5s linear;
+      opacity: 1;
+  }
+  
+  
+  .card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
+      color: white;
+  }
+  
+  .card-subtitle {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+    position: relative;
+    z-index: 2;
+      color: white;
+  }
+  
+  .card-image {
+    height: 180px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  @keyframes Scale {
+    20% {
+        transform: translateY(-6px);
+    }
+    
+  }

@@ -1,0 +1,107 @@
+@import url('http://fonts.cdnfonts.com/css/superbly');
+
+body {
+    background-image:url(../img/cenario_batalha.png);
+	font-family: 'superbly_10_01', sans-serif;
+    background-size: cover;
+	background-repeat: repeat-x;
+	background-color: rgb(177, 175, 175);
+    height: 100vh;
+    width: 100vw;
+  
+}
+.inimigo {
+	height: 50%;
+    width: 50%;
+	margin-left: 55%;
+}
+
+.aliado {
+	
+	
+	padding-top: 15%;
+	margin-right: 50%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 54px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.pokedex {
+
+	
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+	padding: 0px;
+	text-align: center;
+	border-radius: 15px;
+	position: relative;
+}
+
+.card-inimigo {
+	list-style: none;
+	padding: 0px;
+	text-align: center;
+	border-radius: 15px;
+	position: relative;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+    color: white;
+	top: 100px;
+}
+
+.titulo-inimigo {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+    color: white;
+	bottom: 850px;
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: #666;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+    color: white;
+	
+}
+
+.card-image {
+	height: 400px;
+	position: relative;
+	bottom: 850px;
+	z-index: 2;
+}
+.image-meuPokemon {
+	height: 800px;
+	position: relative;
+	z-index: 2;
+}
+
+@keyframes Scale {
+	20% {
+			transform: translateY(-6px);
+	}
+	
+}
+/* http://www.avatarsinpixels.com/minipix/eyJTaG9lcyI6IjEiLCJQYW50cyI6IjMiLCJUb3AiOiIxMyIsIkphY2tldCI6IjUiLCJIYWlyIjoiMSIsInNraW5Ub25lIjoiYmY3YTRkIiwiZXllc1RvbmUiOiI0MTI4MTgiLCJtYXNrVG9uZSI6ImE2MjgyYiIsImhhaXJUb25lIjoiNDEyODE4IiwicGFudHNUb25lIjoiOTFiZGQ2IiwicGFudHNUb25lMiI6IjVlYTZjMSIsInRvcFRvbmUiOiIwNjMwMDkifQ==/1/show.png */

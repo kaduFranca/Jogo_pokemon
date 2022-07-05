@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="./cutScene/jornada.css" />
+    <link href="http://fonts.cdnfonts.com/css/superbly" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./cutScene/jornada.js"></script>
+    <script src="./cutScene/mostrarPokemon.js"></script>
+    <title>Começo de Jornada</title>
+</head>
+<body>
+    <div class="dialog-main"></div>
+
+    <div class="npc">
+        <img src="http://www.avatarsinpixels.com/minipix/eyJTaG9lcyI6IjEiLCJQYW50cyI6IjMiLCJUb3AiOiIxMyIsIkphY2tldCI6IjUiLCJIYWlyIjoiMSIsInNraW5Ub25lIjoiYmY3YTRkIiwiZXllc1RvbmUiOiI0MTI4MTgiLCJtYXNrVG9uZSI6ImE2MjgyYiIsImhhaXJUb25lIjoiNDEyODE4IiwicGFudHNUb25lIjoiOTFiZGQ2IiwicGFudHNUb25lMiI6IjVlYTZjMSIsInRvcFRvbmUiOiIwNjMwMDkifQ==/1/show.png" alt="">
+
+    </div>
+
+    <div class="dialog" id="dialog">
+        
+        <div class="dialog-content">
+            <h1 class="dialog-title">Bem-vindo</h1>
+            <p class="dialog-title">"Vejo que você quer entrar para duelar no Ginásio Pokemon da Unville. Me chamo Kadu e vou te acompanhar nessa Jornada, mas primeiro me dizer seu nome?"</p>
+            <label class="dialog-input-title" for="fname" id="dialogLable"><b>Diga seu nome:</b> </label><br>
+            <input class="dialog-input" type="text" id="playerName"><br>
+            <img class="icon" id="res" src="../img/icone_hover.png">
+            <a onmouseover="showIcon(res)" onmouseout="closeIcon(res)" onclick="pegarNome()" class="menu-button">
+                Responder
+            </a>
+            
+            
+        </div>
+    </div>
+
+
+    <div class="dialog-short">
+       
+        <div class="dialog-content-short"  id="dialogEscolha">
+            <h1 class="dialog-title" id="titulo">.titulo</h1>
+            <p class="dialog-title" id="corpo">.corpo</p>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container close-pokemon" id="container">
+    
+    <ul  data-js="pokedex" class="pokedex" id="pokedex" >
+        
+    </ul>
+</div>
+
+</body>
+</html>
