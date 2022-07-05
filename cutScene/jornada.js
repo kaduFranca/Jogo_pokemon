@@ -68,7 +68,7 @@ function escolherPokemon(pokemonId) {
 
     document.getElementById("titulo").innerHTML = "Ótima escolha " + nomeJogador + "!" 
     document.getElementById("corpo").innerHTML = `Agora que tem um pokemon, vamos lá!
-    <img class="icon-short" id="res2" src="../img/icone_hover.png">
+    <img class="icon-short" id="res2" src="./img/icone_hover.png">
     <a onmouseover="showIcon(res2)" onmouseout="closeIcon(res2)" href="../battle/battleIndex.html" class="menu-button-short">
                 Continuar
             </a>
